@@ -1,0 +1,26 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Debug CCWC",
+      "skipFiles": ["<node_internals>/**"],
+      "cwd": "${workspaceFolder}/wc/node",
+      "program": "${workspaceFolder}/wc/node/bin/index.js",
+      "args": ["-clw", "${workspaceFolder}/wc/node/test.txt"]
+    },
+
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Debug CCWC Unit tests",
+      "skipFiles": ["<node_internals>/**"],
+      "cwd": "${workspaceFolder}/wc/node",
+      "program": "${workspaceFolder}/wc/node/node_modules/jest/bin/jest.js"
+    }
+  ]
+}
