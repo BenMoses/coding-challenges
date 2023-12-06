@@ -5,6 +5,21 @@
   "version": "0.2.0",
   "configurations": [
     {
+      "name": "Debug CCWC Go",
+      "type": "go",
+      "request": "launch",
+      "mode": "debug",
+      "program": "${workspaceFolder}/wc/go/main.go",
+      "args": ["-c", "-l", "-w", "${workspaceFolder}/wc/go/test.txt"]
+    },
+    {
+      "name": "Debug CCWC Go Unit tests",
+      "type": "go",
+      "request": "launch",
+      "mode": "test",
+      "program": "${workspaceFolder}/wc/go/main_test.go"
+    },
+    {
       "type": "node",
       "request": "launch",
       "name": "Debug CCWC",
@@ -13,7 +28,6 @@
       "program": "${workspaceFolder}/wc/node/bin/index.js",
       "args": ["-clw", "${workspaceFolder}/wc/node/test.txt"]
     },
-
     {
       "type": "node",
       "request": "launch",
@@ -21,6 +35,13 @@
       "skipFiles": ["<node_internals>/**"],
       "cwd": "${workspaceFolder}/wc/node",
       "program": "${workspaceFolder}/wc/node/node_modules/jest/bin/jest.js"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Debug scrape.js",
+      "skipFiles": ["<node_internals>/**"],
+      "program": "${workspaceFolder}/scraper/scrape.js"
     }
   ]
 }

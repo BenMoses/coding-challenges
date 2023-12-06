@@ -1,2 +1,5 @@
 # Ignore all node_modules for all projects
 **/node_modules
+
+# Ignore all built binaries
+**/build

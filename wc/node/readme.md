@@ -9,6 +9,11 @@
 5. Attempted to divide into units but again isn't worth it.
 6. Tried adding a man page, but it requires manual install so not worth it
 
+## TODO:
+
+1. Make the program more efficient, currently I'm loading it twice one after the other
+2. Investigate readFile vs dataStream
+
 ## Links:
 
 https://codingchallenges.fyi/challenges/challenge-wc

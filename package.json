@@ -4,7 +4,7 @@
   "description": "Coding Challenges",
   "scripts": {
     "wc:node": "cd wc/node && npm install -g && ccwc -lcw test.txt",
-    "wc:go": "echo 'Not done yet'"
+    "wc:go": "cd wc/go && go build -o build/ccwc && ./build/ccwc -l -c -w test.txt"
   },
   "author": "Ben Moses"
 }
