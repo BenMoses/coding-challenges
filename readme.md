@@ -14,3 +14,7 @@
 - `Initial commit including WC node challenge`
 - `<title> <node|go> challenge`
 - `<challenge>: fix ...`
+
+## TODO:
+
+implement Java folders for all challenges

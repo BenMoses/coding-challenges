@@ -3,8 +3,8 @@
   "version": "0.0.1",
   "description": "Coding Challenges",
   "scripts": {
-    "wc:node": "cd wc/node && npm install -g && ccwc -lcw test.txt",
-    "wc:go": "cd wc/go && go build -o build/ccwc && ./build/ccwc -l -c -w test.txt"
+    "wc:node": "cd wc/node && npm install -g && ccwc -lcw ../test.txt",
+    "wc:go": "cd wc/go && go build -o build/ccwc && ./build/ccwc -l -c -w ../test.txt"
   },
   "author": "Ben Moses"
 }

@@ -61,12 +61,6 @@ fs.stat(file, (err, stats) => {
         if (chunk[i] == SPACE) {
           wordCount++;
         }
-
-        // const s = buffer.Buffer.from([chunk[i]]).toString();
-        // const whitespaceRegex = /\s/;
-        // if (s.match(whitespaceRegex)) {
-        //   wordCount++;
-        // }
       }
     })
     .on("end", function () {
@@ -75,10 +69,3 @@ fs.stat(file, (err, stats) => {
       console.log(...output);
     });
 });
-
-// d this is the first program!");
-
-// ccwc -c test.txt
-
-// wc -c test.txt
-// 335039 test.txt
