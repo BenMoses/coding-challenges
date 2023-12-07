@@ -2,6 +2,7 @@ package main
 
 import (
 	"bytes"
+	"ccwc/utils"
 	"flag"
 	"fmt"
 	"io"
@@ -14,16 +15,10 @@ const (
 	SPACE    = 32
 )
 
-func check(e error) {
-	if e != nil {
-		panic(e)
-	}
-}
-
 func wc(f string, c *bool, w *bool, l *bool) string {
 
 	b, err := ioutil.ReadFile(f)
-	check(err)
+	utils.Check(err)
 
 	reader := bytes.NewReader(b)
 	pos := 0

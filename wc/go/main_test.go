@@ -1,12 +1,9 @@
 package main
 
 import (
+	"ccwc/utils"
 	"testing"
 )
-
-func boolPtr(b bool) *bool {
-	return &b
-}
 
 func Test_wc(t *testing.T) {
 	type args struct {
@@ -20,9 +17,7 @@ func Test_wc(t *testing.T) {
 		args     args
 		expected string
 	}{
-		{"Should work when all args are true", args{"test.txt", boolPtr(true), boolPtr(true), boolPtr(true)}, "7142 53033 332143 test.txt"},
-		// This one fails
-		// {"Should work when all args are true", args{"test.txt", &true, &true, &true}},
+		{"Should work when all args are true", args{"test.txt", utils.ToPointer(true), utils.ToPointer(true), utils.ToPointer(true)}, "7142 53033 332143 test.txt"},
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
